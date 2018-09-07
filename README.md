@@ -3,7 +3,7 @@ Does your server have poor memory?
 
 ## Run
 ```bash
-docker run --name mariadb -d
+docker run --name mariadb -d imamdigmi/mariadb-low-memory:latest
 ```
 
 Or with initial database and user
@@ -11,5 +11,6 @@ Or with initial database and user
 docker run --name mariadb -d -e MYSQL_RANDOM_ROOT_PASSWORD=yes \
     -e MYSQL_DATABASE=ujian_online -e MYSQL_USER=ujian_online \
     -e MYSQL_PASSWORD=ujian_online \
-    mariadb-low-memory:latest
+    imamdigmi/mariadb-low-memory:latest
 ```
+
